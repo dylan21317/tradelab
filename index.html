@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tradelab – comprendre les marchés avant de risquer son argent</title>
+  <meta name="description" content="Bases du trading, calculateurs de risque et tableau de marché prêt à recevoir vos sources de données.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="wrap bar">
+    <a class="logo" href="index.html">Trade<span>lab</span></a>
+    <nav aria-label="Navigation principale">
+      <a href="index.html" aria-current="page">Accueil</a>
+      <a href="apprendre.html">Apprendre</a>
+      <a href="formules.html">Formules</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="service_externe.html">Sources de données</a>
+    </nav>
+    <input type="checkbox" id="theme" class="theme-input" aria-label="Inverser le thème clair ou sombre">
+    <label for="theme" class="theme-btn">Thème clair / sombre</label>
+  </div></header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>Comprendre un marché avant d’y mettre de l’argent.</h1>
+          <p class="lead">Tradelab explique les bases, détaille les formules de risque et propose un quiz pour vous tester.</p>
+          <p><a class="btn" href="formules.html">Voir les formules</a> <a class="btn btn-ghost" href="apprendre.html">Apprendre les bases</a></p>
+        </div>
+        <div class="candles" aria-hidden="true">
+          <i class="d" style="--n:0;--h:3rem;--y:3.5rem"></i><i class="u" style="--n:1;--h:4rem;--y:2.6rem"></i>
+          <i class="d" style="--n:2;--h:2.5rem;--y:3rem"></i><i class="u" style="--n:3;--h:5rem;--y:1.6rem"></i>
+          <i class="u" style="--n:4;--h:4rem;--y:.6rem"></i><i class="d" style="--n:5;--h:3rem;--y:.8rem"></i>
+          <i class="u" style="--n:6;--h:6rem;--y:-.8rem"></i><i class="u" style="--n:7;--h:4.5rem;--y:-2.2rem"></i>
+          <i class="d" style="--n:8;--h:3rem;--y:-2rem"></i><i class="u" style="--n:9;--h:6rem;--y:-3.4rem"></i>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Tableau de marché</h2>
+        <p>Chaque cadre ci-dessous est un emplacement libre, prêt à recevoir le code d’intégration d’une source de données.</p>
+        <div class="panels">
+          <article class="panel panel-wide">
+  <h3>Graphique</h3>
+  <div class="slot" data-slot="graphique">
+    <iframe
+      src="https://s.tradingview.com/widgetembed/?symbol=OANDA%3AXAUUSD&interval=15&theme=dark&style=1&locale=fr&hide_side_toolbar=0&allow_symbol_change=1"
+      title="Graphique de marché"
+      loading="lazy">
+    </iframe>
+  </div>
+</article>
+          <article class="panel"><h3>Prix</h3><div class="slot" data-slot="prix"><!-- Collez ici le code d’intégration de la source -->Emplacement libre : voir « Sources de données ».</div></article>
+          <article class="panel"><h3>Actualités</h3><div class="slot" data-slot="news"><!-- Collez ici le code d’intégration de la source -->Emplacement libre : voir « Sources de données ».</div></article>
+          <article class="panel"><h3>Calendrier économique</h3><div class="slot" data-slot="calendrier"><!-- Collez ici le code d’intégration de la source -->Emplacement libre : voir « Sources de données ».</div></article>
+          <article class="panel"><h3>Indicateur de sentiment</h3><div class="slot" data-slot="sentiment"><!-- Collez ici le code d’intégration de la source -->Emplacement libre : voir « Sources de données ».</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Ce que contient le site</h2>
+        <div class="panels">
+          <article class="panel"><h3>Apprendre</h3><p>Le vocabulaire, les types d’ordres et les règles de gestion du risque.</p><a href="apprendre.html">Lire les bases</a></article>
+          <article class="panel"><h3>Calculer</h3><p>Taille de position et ratio risque/rendement, avec les formules et des exemples chiffrés.</p><a href="formules.html">Voir les formules</a></article>
+          <article class="panel"><h3>Se tester</h3><p>Cinq questions sur le risque, avec la correction et le score.</p><a href="quiz.html">Passer le quiz</a></article>
+          <article class="panel"><h3>Brancher vos données</h3><p>Des emplacements déjà prévus pour y coller le code d’intégration d’un service.</p><a href="service_externe.html">Voir la marche à suivre</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p class="warning"><strong>Avertissement.</strong> Le trading comporte un risque élevé de perte, y compris de la totalité du capital engagé. Ce site est pédagogique : il ne constitue pas un conseil en investissement.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><p>© 2026 Tradelab. Contenu pédagogique, sans conseil en investissement.</p></div></footer>
+</body>
+</html>

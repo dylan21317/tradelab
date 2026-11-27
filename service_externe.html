@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sources de données – Tradelab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="wrap bar">
+    <a class="logo" href="index.html">Trade<span>lab</span></a>
+    <nav aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="apprendre.html">Apprendre</a>
+      <a href="formules.html">Formules</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="service_externe.html" aria-current="page">Sources de données</a>
+    </nav>
+    <input type="checkbox" id="theme" class="theme-input" aria-label="Inverser le thème clair ou sombre">
+    <label for="theme" class="theme-btn">Thème clair / sombre</label>
+  </div></header>
+
+  <main class="wrap page">
+    <h1>Sources de données</h1>
+    <p class="lead">Cette page explique comment brancher une source de données sur le site. Aucune n’est branchée pour l’instant.</p>
+
+    <h2>Brancher une source</h2>
+    <ol class="steps">
+      <li><h3>Choisir un service</h3><p>Prenez un service de données de marché qui fournit un code d’intégration à copier, le plus souvent une balise <code>&lt;iframe&gt;</code>.</p></li>
+      <li><h3>Repérer l’emplacement</h3><p>Dans <code>index.html</code>, chaque cadre pointillé est un <code>&lt;div class="slot" data-slot="…"&gt;</code>. Le nom est donné dans le tableau ci-dessous.</p></li>
+      <li><h3>Coller le code</h3><p>Remplacez le texte du cadre par le code du service, puis rechargez la page. Le cadre prend alors la forme du contenu collé.</p></li>
+    </ol>
+
+    <h2>Emplacements disponibles</h2>
+    <div class="table-scroll">
+      <table>
+        <caption class="sr">Emplacements prévus pour les sources de données</caption>
+        <thead><tr><th scope="col">Emplacement</th><th scope="col">Page</th><th scope="col">Données attendues</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><code>graphique</code></th><td>Accueil</td><td>Graphique de prix</td></tr>
+          <tr><th scope="row"><code>prix</code></th><td>Accueil</td><td>Dernier prix et variation du jour</td></tr>
+          <tr><th scope="row"><code>news</code></th><td>Accueil</td><td>Titres d’actualité financière</td></tr>
+          <tr><th scope="row"><code>calendrier</code></th><td>Accueil</td><td>Annonces économiques à venir</td></tr>
+          <tr><th scope="row"><code>sentiment</code></th><td>Accueil</td><td>Indice de peur et d’avidité ou équivalent</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="warning"><strong>Limite du HTML et du CSS seuls.</strong> Ils ne peuvent pas interroger une API pour en lire les données. Seul un code d’intégration fourni par le service, qui affiche lui-même ses données, fonctionne sans JavaScript. Vérifiez aussi les conditions d’utilisation du service avant de l’intégrer.</p>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><p>© 2026 Tradelab. Contenu pédagogique, sans conseil en investissement.</p></div></footer>
+</body>
+</html>

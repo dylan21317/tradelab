@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz sur le risque – Tradelab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="wrap bar">
+    <a class="logo" href="index.html">Trade<span>lab</span></a>
+    <nav aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="apprendre.html">Apprendre</a>
+      <a href="formules.html">Formules</a>
+      <a href="quiz.html" aria-current="page">Quiz</a>
+      <a href="service_externe.html">Sources de données</a>
+    </nav>
+    <input type="checkbox" id="theme" class="theme-input" aria-label="Inverser le thème clair ou sombre">
+    <label for="theme" class="theme-btn">Thème clair / sombre</label>
+  </div></header>
+
+  <main class="wrap page">
+    <h1>Quiz sur le risque</h1>
+    <p class="lead">Cinq questions tirées des pages « Apprendre » et « Formules ». Cliquez sur une réponse pour voir la correction. Le score se calcule tout seul.</p>
+
+    <form class="quiz">
+      <fieldset>
+        <legend>1. Avec 10&nbsp;000&nbsp;€ de capital et un risque de 1&nbsp;% par position, quelle est la perte maximale ?</legend>
+        <input type="radio" name="q1" id="q1a"><label for="q1a">10&nbsp;€</label>
+        <input type="radio" name="q1" id="q1b" class="ok"><label for="q1b" class="bonne">100&nbsp;€</label>
+        <input type="radio" name="q1" id="q1c"><label for="q1c">1&nbsp;000&nbsp;€</label>
+        <p class="explication">1&nbsp;% de 10&nbsp;000&nbsp;€ fait 100&nbsp;€. C’est le montant risqué, que le stop doit limiter.</p>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Quand faut-il fixer son stop loss ?</legend>
+        <input type="radio" name="q2" id="q2a"><label for="q2a">Après l’entrée, si le prix baisse</label>
+        <input type="radio" name="q2" id="q2b" class="ok"><label for="q2b" class="bonne">Avant d’entrer</label>
+        <input type="radio" name="q2" id="q2c"><label for="q2c">Il vaut mieux ne pas en mettre</label>
+        <p class="explication">Le stop est le prix où l’on accepte d’avoir tort. Le choisir après l’entrée, c’est négocier avec soi-même.</p>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Avec un objectif deux fois plus éloigné que le stop, quel taux de réussite minimal évite de perdre (hors frais) ?</legend>
+        <input type="radio" name="q3" id="q3a"><label for="q3a">25&nbsp;%</label>
+        <input type="radio" name="q3" id="q3b" class="ok"><label for="q3b" class="bonne">33&nbsp;%</label>
+        <input type="radio" name="q3" id="q3c"><label for="q3c">50&nbsp;%</label>
+        <p class="explication">Ratio de 2 : 1 ÷ (1 + 2) = 33,3&nbsp;%. Sur 3 positions, une seule gagnante suffit à compenser les deux perdantes.</p>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Que fait le levier ?</legend>
+        <input type="radio" name="q4" id="q4a"><label for="q4a">Il réduit le risque</label>
+        <input type="radio" name="q4" id="q4b" class="ok"><label for="q4b" class="bonne">Il amplifie les gains comme les pertes</label>
+        <input type="radio" name="q4" id="q4c"><label for="q4c">Il supprime le spread</label>
+        <p class="explication">Le levier permet d’engager plus que son capital, et la perte se calcule sur la somme engagée.</p>
+      </fieldset>
+
+      <fieldset>
+        <legend>5. Quel ordre s’exécute tout de suite au meilleur prix disponible ?</legend>
+        <input type="radio" name="q5" id="q5a" class="ok"><label for="q5a" class="bonne">L’ordre au marché</label>
+        <input type="radio" name="q5" id="q5b"><label for="q5b">L’ordre à cours limité</label>
+        <input type="radio" name="q5" id="q5c"><label for="q5c">Le take profit</label>
+        <p class="explication">L’ordre à cours limité attend un prix précis, et le take profit ferme une position déjà ouverte.</p>
+      </fieldset>
+
+      <p class="score">Score : </p>
+      <button class="btn btn-ghost" type="reset">Recommencer</button>
+    </form>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><p>© 2026 Tradelab. Contenu pédagogique, sans conseil en investissement.</p></div></footer>
+</body>
+</html>
