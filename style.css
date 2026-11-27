@@ -206,4 +206,13 @@ tbody th { font-weight: 400; }
 .quiz fieldset:has(input.ok:checked) { counter-increment: score; }
 .score { margin: 0 0 1rem; font-size: 1.4rem; font-weight: 700; }
 .score::after { content: counter(score) " / 5"; }
-f
+
+
+/* Hauteur de l'encadré Prix */
+.slot[data-slot="prix"] {
+  min-height: 28rem;
+}
+
+.slot[data-slot="prix"] iframe {
+  min-height: 28rem;
+}
