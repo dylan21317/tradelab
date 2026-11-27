@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tradelab – comprendre les marchés avant de risquer son argent</title>
-  <meta name="description" content="Bases du trading, calculateurs de risque et tableau de marché prêt à recevoir vos sources de données.">
+  <meta name="description" content="Bases du trading, calculateurs de risque et tableau de marché en direct.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +15,6 @@
       <a href="apprendre.html">Apprendre</a>
       <a href="formules.html">Formules</a>
       <a href="quiz.html">Quiz</a>
-      <a href="service_externe.html">Sources de données</a>
     </nav>
     <input type="checkbox" id="theme" class="theme-input" aria-label="Inverser le thème clair ou sombre">
     <label for="theme" class="theme-btn">Thème clair / sombre</label>
@@ -42,33 +41,70 @@
     <section>
       <div class="wrap">
         <h2>Tableau de marché</h2>
-        <p>Chaque cadre ci-dessous est un emplacement libre, prêt à recevoir le code d’intégration d’une source de données.</p>
+        <p>Suivez les graphiques, les cotations, les actualités financières et les taux de change en direct.</p>
         <div class="panels">
           <article class="panel panel-wide">
-  <h3>Graphique</h3>
-  <div class="slot" data-slot="graphique">
-    <iframe
-      src="https://s.tradingview.com/widgetembed/?symbol=OANDA%3AXAUUSD&interval=15&theme=dark&style=1&locale=fr&hide_side_toolbar=0&allow_symbol_change=1"
-      title="Graphique de marché"
-      loading="lazy">
-    </iframe>
-  </div>
-</article>
+            <h3>Graphique</h3>
+            <div class="slot" data-slot="graphique">
+              <iframe
+                src="https://s.tradingview.com/widgetembed/?symbol=OANDA%3AXAUUSD&interval=15&theme=dark&style=1&locale=fr&hide_side_toolbar=0&allow_symbol_change=1"
+                title="Graphique de marché"
+                loading="lazy">
+              </iframe>
+            </div>
+          </article>
           <article class="panel">
-  <h3>Prix</h3>
-  <div class="slot" data-slot="prix">
-    <iframe
-      src="https://s.tradingview.com/embed-widget/market-overview/?locale=fr#%7B%22colorTheme%22%3A%22dark%22%2C%22dateRange%22%3A%221D%22%2C%22showChart%22%3Atrue%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22420%22%2C%22isTransparent%22%3Atrue%2C%22showSymbolLogo%22%3Atrue%2C%22tabs%22%3A%5B%7B%22title%22%3A%22March%C3%A9s%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22OANDA%3AXAUUSD%22%2C%22d%22%3A%22Or%20(XAU%2FUSD)%22%7D%2C%7B%22s%22%3A%22BINANCE%3ABTCUSDT%22%2C%22d%22%3A%22Bitcoin%20(BTC)%22%7D%2C%7B%22s%22%3A%22BINANCE%3AETHUSDT%22%2C%22d%22%3A%22Ethereum%20(ETH)%22%7D%2C%7B%22s%22%3A%22FX%3AEURUSD%22%2C%22d%22%3A%22EUR%2FUSD%22%7D%2C%7B%22s%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22d%22%3A%22S%26P%20500%22%7D%2C%7B%22s%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22d%22%3A%22NASDAQ%20100%22%7D%2C%7B%22s%22%3A%22TVC%3AUSOIL%22%2C%22d%22%3A%22P%C3%A9trole%20WTI%22%7D%5D%7D%5D%7D"
-      title="Prix des marchés en direct"
-      loading="lazy">
-    </iframe>
-  </div>
-</article>
-          <article class="panel"><h3>Actualités</h3><div class="slot" data-slot="news"><!-- Collez ici le code d’intégration de la source -->Emplacement libre : voir « Sources de données ».</div></article>
-          <article class="panel"><h3>Calendrier économique</h3><div class="slot" data-slot="calendrier"><!-- Collez ici le code d’intégration de la source -->Emplacement libre : voir « Sources de données ».</div></article>
-          <article class="panel"><h3>Indicateur de sentiment</h3><div class="slot" data-slot="sentiment"><!-- Collez ici le code d’intégration de la source -->Emplacement libre : voir « Sources de données ».</div></article>
+            <h3>Prix</h3>
+            <div class="slot" data-slot="prix">
+              <iframe
+                src="https://s.tradingview.com/embed-widget/market-overview/?locale=fr#%7B%22colorTheme%22%3A%22dark%22%2C%22dateRange%22%3A%221D%22%2C%22showChart%22%3Atrue%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22420%22%2C%22isTransparent%22%3Atrue%2C%22showSymbolLogo%22%3Atrue%2C%22tabs%22%3A%5B%7B%22title%22%3A%22March%C3%A9s%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22OANDA%3AXAUUSD%22%2C%22d%22%3A%22Or%20(XAU%2FUSD)%22%7D%2C%7B%22s%22%3A%22BINANCE%3ABTCUSDT%22%2C%22d%22%3A%22Bitcoin%20(BTC)%22%7D%2C%7B%22s%22%3A%22BINANCE%3AETHUSDT%22%2C%22d%22%3A%22Ethereum%20(ETH)%22%7D%2C%7B%22s%22%3A%22FX%3AEURUSD%22%2C%22d%22%3A%22EUR%2FUSD%22%7D%2C%7B%22s%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22d%22%3A%22S%26P%20500%22%7D%2C%7B%22s%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22d%22%3A%22NASDAQ%20100%22%7D%2C%7B%22s%22%3A%22TVC%3AUSOIL%22%2C%22d%22%3A%22P%C3%A9trole%20WTI%22%7D%5D%7D%5D%7D"
+                title="Prix des marchés en direct"
+                loading="lazy">
+              </iframe>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Actualités</h3>
+            <div class="slot" data-slot="news">
+              <iframe
+                src="https://s.tradingview.com/embed-widget/timeline/?locale=fr#%7B%22feedMode%22%3A%22all_symbols%22%2C%22isTransparent%22%3Atrue%2C%22displayMode%22%3A%22regular%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22420%22%2C%22colorTheme%22%3A%22dark%22%7D"
+                title="Actualités financières en direct"
+                loading="lazy">
+              </iframe>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Calendrier économique</h3>
+            <div class="slot" data-slot="calendrier">
+              <iframe
+                src="https://s.tradingview.com/embed-widget/events/?locale=fr#%7B%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Atrue%2C%22width%22%3A%22100%25%22%2C%22height%22%3A%22420%22%2C%22importanceFilter%22%3A%220%2C1%22%7D"
+                title="Calendrier économique"
+                loading="lazy">
+              </iframe>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Indicateur de sentiment</h3>
+            <div class="slot" data-slot="sentiment">
+              <iframe
+                src="https://s.tradingview.com/embed-widget/technical-analysis/?locale=fr#%7B%22interval%22%3A%2215m%22%2C%22width%22%3A%22100%25%22%2C%22isTransparent%22%3Atrue%2C%22height%22%3A%22420%22%2C%22symbol%22%3A%22OANDA%3AXAUUSD%22%2C%22showIntervalTabs%22%3Atrue%2C%22colorTheme%22%3A%22dark%22%7D"
+                title="Analyse technique et sentiment"
+                loading="lazy">
+              </iframe>
+            </div>
+          </article>
+          <article class="panel">
+            <h3>Convertisseur de devises (Taux réels)</h3>
+            <div class="slot" data-slot="convertisseur">
+              <iframe
+                src="https://fx-rate.net/widget/calculator/?currency_pair=EURUSD&amount=1000&theme=light"
+                title="Convertisseur de devises en direct"
+                loading="lazy">
+              </iframe>
+            </div>
+          </article>
         </div>
-      </div>
+      </div>  
     </section>
 
     <section>
@@ -78,7 +114,6 @@
           <article class="panel"><h3>Apprendre</h3><p>Le vocabulaire, les types d’ordres et les règles de gestion du risque.</p><a href="apprendre.html">Lire les bases</a></article>
           <article class="panel"><h3>Calculer</h3><p>Taille de position et ratio risque/rendement, avec les formules et des exemples chiffrés.</p><a href="formules.html">Voir les formules</a></article>
           <article class="panel"><h3>Se tester</h3><p>Cinq questions sur le risque, avec la correction et le score.</p><a href="quiz.html">Passer le quiz</a></article>
-          <article class="panel"><h3>Brancher vos données</h3><p>Des emplacements déjà prévus pour y coller le code d’intégration d’un service.</p><a href="service_externe.html">Voir la marche à suivre</a></article>
         </div>
       </div>
     </section>
@@ -93,4 +128,3 @@
   <footer class="site-footer"><div class="wrap"><p>© 2026 Tradelab. Contenu pédagogique, sans conseil en investissement.</p></div></footer>
 </body>
 </html>
-fdd
